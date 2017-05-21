@@ -26,12 +26,14 @@ h6 {
     font-weight: 400;
 }
 
+
+
 .intro-header {
-    padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
+    padding-top: 50px; 
     padding-bottom: 50px;
     text-align: center;
     color: #f8f8f8;
-    background: url(../img/Pedestrian2.jpg) no-repeat center center;
+    background: url(../img/Pedestrian0.jpg) no-repeat center center;
     background-size: cover;
 }
 
@@ -81,6 +83,7 @@ h6 {
     }
 }
 
+
 .network-name {
     text-transform: uppercase;
     font-size: 14px;
@@ -88,10 +91,12 @@ h6 {
     letter-spacing: 2px;
 }
 
+
 .content-section-a {
     padding: 50px 0;
     background-color: #f8f8f8;
 }
+
 
 .content-section-b {
     padding: 50px 0;
@@ -99,9 +104,11 @@ h6 {
     border-bottom: 1px solid #e7e7e7;
 }
 
+
 .section-heading {
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 }
+
 
 .section-heading-spacer {
     float: left;
@@ -109,12 +116,14 @@ h6 {
     border-top: 3px solid #e7e7e7;
 }
 
+
 .banner {
-    padding: 100px 0;
+    padding: 200px;
     color: #f8f8f8;
-    background: url(../img/Rpoint.jpg) no-repeat center center;
+    background: url(../img/Pedestrian2.jpg) no-repeat center center;
     background-size: cover;
 }
+
 
 .banner h2 {
     margin: 0;
@@ -122,39 +131,23 @@ h6 {
     font-size: 3em;
 }
 
+
 .banner ul {
-    margin-bottom: 0;
+    margin-top: 1000;
 }
+
+
+
+
+
+
+
 
 .banner-social-buttons {
     float: right;
     margin-top: 0;
 }
 
-@media(max-width:1199px) {
-    ul.banner-social-buttons {
-        float: left;
-        margin-top: 15px;
-    }
-}
-
-@media(max-width:767px) {
-    .banner h2 {
-        margin: 0;
-        text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
-        font-size: 3em;
-    }
-
-    ul.banner-social-buttons > li {
-        display: block;
-        margin-bottom: 20px;
-        padding: 0;
-    }
-
-    ul.banner-social-buttons > li:last-child {
-        margin-bottom: 0;
-    }
-}
 
 footer {
     padding: 50px 0;
