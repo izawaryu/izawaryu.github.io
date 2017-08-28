@@ -64,13 +64,13 @@ aside{padding:50px 0}
 .navbar-default.affix .nav>li>a:focus:hover,.navbar-default.affix .nav>li>a:hover{color:#660066}
 }
 
-header{min-height:auto;-webkit-background-size:cover;-moz-background-size:cover;background-size:cover;-o-background-size:cover;background-position:center;background-image:url(../img/pedestrian0.jpg);color:#fff}
+header{min-height:auto;-webkit-background-size:cover;-moz-background-size:cover;background-size:cover;-o-background-size:cover;background-position:center;background-image:url(../img/eve.jpg);color:#fff}
 header .header-content{padding:100px 15px}
 header .header-content .header-content-inner h1{font-weight:700;text-transform:uppercase;margin-top:0;margin-bottom:0;font-size:30px}
 header .header-content .header-content-inner hr{margin:30px auto}
 header .header-content .header-content-inner p{font-weight:300;color:rgba(255,255,255,.7);font-size:16px;margin-bottom:50px}
 
-footer{min-height:auto;-webkit-background-size:cover;-moz-background-size:cover;background-size:cover;-o-background-size:cover;background-position:center;background-image:url(../img/pedestrian1.jpg);color:#fff}
+footer{min-height:auto;-webkit-background-size:cover;-moz-background-size:cover;background-size:cover;-o-background-size:cover;background-position:center;background-image:url(../img/Oregon_Trail_Marker.jpg);color:#fff}
 footer .footer-content{padding:100px 15px}
 footer .footer-content .footer-content-inner h1{font-weight:700;text-transform:uppercase;margin-top:0;margin-bottom:0;font-size:30px}
 footer .footer-content .footer-content-inner hr{margin:30px auto}
