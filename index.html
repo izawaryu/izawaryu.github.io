@@ -97,7 +97,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
                 </button>
 
-                <a class="navbar-brand page-scroll" href="#page-top">To The Top</a>
+                <a class="navbar-brand page-scroll" id="nav_top" href="#page-top">To The Top</a>
 
             </div>
 
@@ -110,19 +110,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
                     <li>
 
-                        <a class="page-scroll" href="#experience">Experience</a>
+                        <a class="page-scroll" id="nav_experience" href="#experience">Experience</a>
 
                     </li>
 
                     <li>
 
-                        <a class="page-scroll" href="#personal">Personal</a>
+                        <a class="page-scroll" id="nav_personal" href="#personal">Personal</a>
 
                     </li>
 
                     <li>
 
-                        <a class="page-scroll" href="#contact">Contact</a>
+                        <a class="page-scroll" id="nav_contact" href="#contact">Contact</a>
 
                     </li>
 
@@ -152,7 +152,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
                 <p>Helping You Navigate Your Data.</p>
 
-                <a href="#contact" class="btn btn-primary btn-xl page-scroll">Contact Ryu</a>
+                <a href="#contact" class="btn btn-primary btn-xl page-scroll" id="cta_contact">Contact Ryu</a>
 
             </div>
 
@@ -176,11 +176,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
                     <p class="text-faded">When faced with vast and noisy seas of data, useful signals can often be drawn with a bit of ingenuity. Skillfully navigating this data is what drives me professionally.</p>
 
-                    <a href=".\cv.pdf" class="page-scroll btn btn-default btn-xl sr-button" id="Curriculum_Vitae">Curriculum Vitae</a>
+                    <a href=".\cv.pdf" class="page-scroll btn btn-default btn-xl sr-button" id="pdf_cv">Curriculum Vitae</a>
 
                     <br>
                     <br>
-                    <a href=".\resume.pdf" class="page-scroll btn btn-default btn-xl sr-button" id="Resume">Resume</a>
+                    <a href=".\resume.pdf" class="page-scroll btn btn-default btn-xl sr-button" id="pdf_resume">Resume</a>
 
                 </div>
 
@@ -287,7 +287,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
                 <div class="col-lg-6 col-sm-6">
 
-                    <a href="img/portfolio/fullsize/2.jpg" class="portfolio-box" id="Celestial_Navigation">
+                    <a href="img/portfolio/fullsize/2.jpg" class="portfolio-box" id="photo_celestial">
 
                         <img src="img/portfolio/thumbnails/2.jpg" class="img-responsive" alt="">
 
@@ -317,7 +317,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
                 <div class="col-lg-6 col-sm-6">
 
-                    <a href="img/portfolio/fullsize/1.jpg" class="portfolio-box" id="Flight">
+                    <a href="img/portfolio/fullsize/1.jpg" class="portfolio-box" id="photo_flight">
 
                         <img src="img/portfolio/thumbnails/1.jpg" class="img-responsive" alt="">
 
@@ -347,7 +347,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
                 <div class="col-lg-6 col-sm-6">
 
-                    <a href="img/portfolio/fullsize/3.jpg" class="portfolio-box" id="Sailing">
+                    <a href="img/portfolio/fullsize/3.jpg" class="portfolio-box" id="photo_sailing">
 
                         <img src="img/portfolio/thumbnails/3.jpg" class="img-responsive" alt="">
 
@@ -374,70 +374,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     </a>
 
                 </div>
-<!--
-                <div class="col-lg-6 col-sm-6">
-
-                    <a href="img/portfolio/fullsize/4.jpg" class="portfolio-box" id="Water_Polo">
-
-                        <img src="img/portfolio/thumbnails/4.jpg" class="img-responsive" alt="">
-
-                        <div class="portfolio-box-caption">
-
-                            <div class="portfolio-box-caption-content">
-
-                                <div class="project-category text-faded">
-
-                                    Water Polo
-
-                                </div>
-
-                                <div class="project-name">
-
-                                    My life on a Team
-
-                                </div>
-
-                            </div>
-
-                        </div>
-
-                    </a>
-
-                </div>
 
                 <div class="col-lg-6 col-sm-6">
 
-                    <a href="img/portfolio/fullsize/5.jpg" class="portfolio-box" id="Cooking">
-
-                        <img src="img/portfolio/thumbnails/5.jpg" class="img-responsive" alt="">
-
-                        <div class="portfolio-box-caption">
-
-                            <div class="portfolio-box-caption-content">
-
-                                <div class="project-category text-faded">
-
-                                    Cooking
-
-                                </div>
-
-                                <div class="project-name">
-
-                                    My life in the Kitchen
-
-                                </div>
-
-                            </div>
-
-                        </div>
-
-                    </a>
-
-                </div>
--->
-                <div class="col-lg-6 col-sm-6">
-
-                    <a href="img/portfolio/fullsize/6.jpg" class="portfolio-box" id="Family">
+                    <a href="img/portfolio/fullsize/6.jpg" class="portfolio-box" id="photo_family">
 
                         <img src="img/portfolio/thumbnails/6.jpg" class="img-responsive" alt="">
 
@@ -495,17 +435,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
                 <div class="col-sm text-center">
                     <i class="fa fa-phone fa-3x sr-contact"></i>
-                    <p><a href="" class="contact_info" id="phone">+1 303.817.2947</a></p>
+                    <p><a class="contact_info" id="contact_phone">+1 303.817.2947</a></p>
                 </div>
 
                 <div class="col-sm text-center">
                     <i class="fa fa-envelope-o fa-3x sr-contact"></i>
-                    <p><a href="mailto:izawaryu@gmail.com" class="contact_info" id="email">izawaryu@gmail.com</a></p>
+                    <p><a href="mailto:izawaryu@gmail.com" class="contact_info" id="contact_email">izawaryu@gmail.com</a></p>
                 </div>
 
                 <div class="col-sm text-center">
                     <i class="fa fa-microphone fa-3x sr-contact"></i>
-                    <p><a href="https://gsara.club" class="contact_info" id="radio">K2RYU</a></p>
+                    <p><a href="https://gsara.club" class="contact_info" id="contact_radio">K2RYU</a></p>
                 </div>
 
             </div>
@@ -522,7 +462,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
             <div class="footer-content-inner">
 
-                <a href="#page-top" class="btn btn-primary btn-xl page-scroll">To The Top</a>
+                <a href="#page-top" class="btn btn-primary btn-xl page-scroll" id="end_top">To The Top</a>
 
             </div>
 
