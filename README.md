@@ -1,7 +1,7 @@
-## Adaptation of Bootstrap Sample Page
+## Adaptation of Bootstrap Example
 
-Provided free of charge by startbootstrap.com
-Amended by Ryu Izawa on 2017-09-18 with deep appreciation to startbootstrap.com
+Adapted by Ryu from material provided by startbootstrap.com
+
 
 ## Copyright and License
 
