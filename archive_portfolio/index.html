@@ -1,514 +1,585 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
-
 <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Pioneering orbital heliography by precisely reflecting sunlight from Earth's surface to satellites. Calculations to a thousandths of a second.">
+  <meta name="author" content="Ryu Izawa">
 
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-61649690-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'UA-61649690-1');
-</script>
+  <title>The Orbital Heliography Project</title>
 
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-P3RNKWR');</script>
-<!-- End Google Tag Manager -->
-
-    <meta charset="utf-8">
-
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <meta name="description" content="Helping you navigate your data. An experienced data analyst with work in Business Intelligence, Finance, A/B Testing and Product Growth.">
-
-    <meta name="author" content="adapted by RI">
-
-
-
-    <title>Ryu Izawa - Data Analyst</title>
-
-
-
-    <!-- Bootstrap Core CSS -->
-
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-
-    <!-- Custom Fonts -->
-
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-
-    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
-
-
-    <!-- Plugin CSS -->
-
-    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
-
-
-    <!-- Theme CSS -->
-
-    <link href="css/creative.min.css" rel="stylesheet">
-
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-
-    <!--[if lt IE 9]>
-
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-
-    <![endif]-->
-
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css?v=1.0.19">
 </head>
 
-<body id="page-top">
+<body>
+  <!-- NAVIGATION -->
+  <header class="navbar-container">
+    <div class="container">
+      <div class="nav-wrap">
+        <a class="nav-brand" href="#page-top">
+          <!-- Heliograph SVG Logo -->
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <span>Orbital Heliography</span>
+        </a>
+        
+        <nav aria-label="Main Navigation">
+          <ul class="nav-links">
+            <li><a class="nav-link" href="#introduction">Introduction</a></li>
+            <li><a class="nav-link" href="#history">History</a></li>
+            <li><a class="nav-link" href="#physics">Physics</a></li>
+            <li><a class="nav-link" href="#team">The Team</a></li>
+            <li><a class="nav-link" href="#calendar">Calendar</a></li>
+            <li><a class="nav-link" href="predictor.html" style="color: var(--accent-cyan); font-weight: 600;">Pass Predictor</a></li>
+            <li><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+        </nav>
 
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P3RNKWR"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-
-    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
-
-        <div class="container-fluid">
-
-            <!-- Brand and toggle get grouped for better mobile display -->
-
-            <div class="navbar-header">
-
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-
-                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
-
-                </button>
-
-                <a class="navbar-brand page-scroll" id="nav_top" href="#page-top">To The Top</a>
-
-            </div>
-
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-
-                <ul class="nav navbar-nav navbar-right">
-
-                    <li>
-
-                        <a class="page-scroll navbar" id="nav_experience" href="#experience">Experience</a>
-
-                    </li>
-
-                    <li>
-
-                        <a class="page-scroll navbar" id="nav_personal" href="#personal">Personal</a>
-
-                    </li>
-
-                    <li>
-
-                        <a class="page-scroll navbar" id="nav_contact" href="#contact">Contact</a>
-
-                    </li>
-
-                </ul>
-
-            </div>
-
-            <!-- /.navbar-collapse -->
-
+        <div class="hamburger" aria-label="Open mobile menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
+      </div>
+    </div>
+  </header>
 
-        <!-- /.container-fluid -->
-
-    </nav>
-
-
-
-    <header>
-
-        <div class="header-content">
-
-            <div class="header-content-inner">
-
-                <h1 id="homeHeading">Ryu Izawa</h1>
-
-                <hr class="light">
-
-                <p>Helping You Navigate Your Data.</p>
-
-                <a href="#contact" class="btn btn-primary btn-xl page-scroll cta" id="cta_contact">Contact Ryu</a>
-
+  <main id="page-top">
+    
+    <!-- SECTION 1: INTRODUCTION (White Technical Journal Paper) -->
+    <section class="section section-paper" id="introduction">
+      <div class="container">
+        <div class="paper-grid reveal">
+          <div class="paper-text-box">
+            <div class="hero-subtitle">Archival Entry // Surface-to-Orbit Solar Signaling</div>
+            <h1 class="paper-title">Orbital Heliography</h1>
+            <p class="paper-description">
+              Welcome. I am <strong>Ryu Izawa</strong>, and this is a documentation of our attempts at a pioneering, unexplored activity: <strong>Orbital Heliography</strong>. 
+            </p>
+            <p class="paper-description" style="font-size: 1.15rem; margin-top: -1.5rem;">
+              By precisely tracking the relative positions of the Sun and Earth-orbiting satellites to within <strong>one-thousandth of a second</strong>, we use specialized surface mirrors to reflect solar light directly to orbital receivers. Through this optical synchronization, we are developing a basic framework for solar-based orbital communication.
+            </p>
+            
+            <div class="paper-math">
+              <span>Required Angle Precision:</span>
+              <code>&Delta;&theta; = &plusmn; 2.5&Prime;</code>
             </div>
-
-        </div>
-
-    </header>
-
-
-
-    <section class="bg-primary" id="experience">
-
-        <div class="container">
-
-            <div class="row">
-
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-
-                    <h2 class="section-heading"><i>"There are infinite ways to cross a landscape; the options are overwhelming, and pitfalls abound.<br>The function of a path is to reduce this teeming chaos into an intelligible line."</i><br>Robert Moor</h2>
-
-                    <hr class="light">
-
-                    <p class="text-faded">When faced with vast and noisy seas of data, useful signals can often be drawn with a bit of ingenuity. Skillfully navigating this data is what drives me professionally.</p>
-
-                    <a href=".\cv.pdf" class="btn btn-default btn-xl sr-button pdf" id="pdf_cv">Curriculum Vitae</a>
-
-                    <br>
-                    <br>
-                    <a href=".\resume.pdf" class="btn btn-default btn-xl sr-button pdf" id="pdf_resume">Resume</a>
-
-                </div>
-
+          </div>
+          
+          <div class="paper-diagram-container">
+            <div class="paper-diagram-box" style="--plate-text: 'PLATE I';">
+              <!-- Technical SVG Drawing: Celestial Heliography coordinate calculations -->
+              <svg viewBox="0 0 320 320" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" class="blueprint-svg">
+                <!-- Earth Polar Axis (Perfecty Vertical) -->
+                <line x1="160" y1="70" x2="160" y2="270" stroke="var(--text-muted, currentColor)" stroke-width="0.8" stroke-dasharray="3,3" />
+                <text x="160" y="62" fill="var(--text-muted, currentColor)" font-family="var(--font-mono)" font-size="7" text-anchor="middle">North Pole</text>
+                <text x="160" y="278" fill="var(--text-muted, currentColor)" font-family="var(--font-mono)" font-size="7" text-anchor="middle">South Pole</text>
+                
+                <!-- Orbit Track - Back Half (Dotted background half, drawn behind Earth, rotated by -45 degrees) -->
+                <g transform="rotate(-45, 160, 170)">
+                  <path d="M 40 170 A 120 30 0 0 1 280 170" stroke="var(--accent-cyan)" stroke-width="0.8" stroke-dasharray="4,4" />
+                </g>
+                
+                <!-- Earth Sphere (Central) -->
+                <circle cx="160" cy="170" r="60" stroke="var(--text-secondary, currentColor)" stroke-width="1.2" fill="#fff" />
+                <text x="160" y="174" fill="var(--text-muted, currentColor)" font-family="var(--font-heading)" font-size="10" font-style="italic" text-anchor="middle">Earth</text>
+                
+                <!-- Earth Equator (Perfecty Horizontal Ellipse) -->
+                <ellipse cx="160" cy="170" rx="60" ry="15" stroke="var(--text-muted, currentColor)" stroke-width="0.8" stroke-dasharray="2,2" />
+                <text x="225" y="174" fill="var(--text-muted, currentColor)" font-family="var(--font-mono)" font-size="7">Equator</text>
+                
+                <!-- Earth Grid Lines: Arctic Circle, Antarctic Circle (Adds rich technical blueprint feel) -->
+                <ellipse cx="160" cy="115" rx="24" ry="6" stroke="var(--text-muted, currentColor)" stroke-width="0.6" stroke-dasharray="2,2" />
+                <text x="160" y="108" fill="var(--text-muted, currentColor)" font-family="var(--font-mono)" font-size="6" text-anchor="middle">Arctic Circle</text>
+                <ellipse cx="160" cy="225" rx="24" ry="6" stroke="var(--text-muted, currentColor)" stroke-width="0.6" stroke-dasharray="2,2" />
+                
+                <!-- Orbit Track - Front Half (Solid foreground half, drawn in front of Earth, rotated by -45 degrees) -->
+                <g transform="rotate(-45, 160, 170)">
+                  <path d="M 40 170 A 120 30 0 0 0 280 170" stroke="var(--accent-cyan)" stroke-width="1.2" />
+                  <text x="70" y="194" fill="var(--accent-cyan)" font-family="var(--font-mono)" font-size="8" transform="rotate(12, 70, 194)">Orbit</text>
+                  
+                  <!-- Satellite (Sat) on Orbit (North of Equator, rotated into position) -->
+                  <g transform="translate(280, 170)">
+                    <circle cx="0" cy="0" r="3.5" fill="var(--accent-cyan)" />
+                    <line x1="-8" y1="0" x2="8" y2="0" stroke="var(--accent-cyan)" stroke-width="1.2" />
+                    <rect x="-3" y="-6" width="6" height="4" stroke="var(--accent-cyan)" fill="#fff" stroke-width="0.8" />
+                    <!-- Counter-rotate text by 45 degrees so it stays upright -->
+                    <text x="10" y="3" fill="var(--accent-cyan)" font-family="var(--font-mono)" font-size="8" font-weight="bold" transform="rotate(45)">Sat</text>
+                  </g>
+                </g>
+                
+                <!-- Heliostat on Earth's Surface (Inside Earth disc, slightly towards centerline, 36 degrees North) -->
+                <circle cx="185" cy="135" r="2.5" fill="var(--text-primary, currentColor)" />
+                <!-- Mathematically oriented mirror: perpendicular to bisector of Sun/Sat rays -->
+                <line x1="182" y1="127" x2="188" y2="143" stroke="var(--text-primary, currentColor)" stroke-width="2.5" />
+                <!-- Mirror mount pole -->
+                <line x1="185" y1="135" x2="181" y2="141" stroke="var(--text-primary, currentColor)" stroke-width="1" />
+                <text x="138" y="142" fill="var(--text-primary, currentColor)" font-family="var(--font-mono)" font-size="7.5">Heliostat</text>
+                
+                <!-- Sun (Left side, North of equator) -->
+                <circle cx="40" cy="120" r="10" stroke="var(--accent-gold)" stroke-width="1.2" />
+                <path d="M40 105 L40 101 M40 135 L40 139 M25 120 L21 120 M55 120 L59 120 M29 109 L26 106 M51 131 L54 134 M29 131 L26 134 M51 109 L54 106" stroke="var(--accent-gold)" stroke-width="0.8" />
+                <text x="40" y="102" fill="var(--accent-gold)" font-family="var(--font-heading)" font-size="9" font-weight="bold" text-anchor="middle">Sun</text>
+                
+                <!-- Solar Incident Ray (Sun to Heliostat) -->
+                <line x1="40" y1="120" x2="185" y2="135" stroke="var(--accent-gold)" stroke-width="1" stroke-dasharray="3,3" />
+                <path d="M95 126 L88 122 L89 129 Z" fill="var(--accent-gold)" />
+                <text x="75" y="118" fill="var(--accent-gold)" font-family="var(--font-mono)" font-size="7">Solar Ray</text>
+                
+                <!-- Reflected Message Ray (Heliostat to Satellite) -->
+                <line x1="185" y1="135" x2="251" y2="80" stroke="var(--accent-cyan)" stroke-width="1.5" />
+                <path d="M215 110 L208 115 L212 118 Z" fill="var(--accent-cyan)" />
+                <text x="210" y="112" fill="var(--accent-cyan)" font-family="var(--font-mono)" font-size="7" transform="rotate(-40, 210, 112)">Signal</text>
+                
+                <!-- Geometric angle marking at Heliostat -->
+                <path d="M170 134 A 15 15 0 0 1 174 125" stroke="var(--text-secondary, currentColor)" stroke-width="0.8" />
+                <text x="168" y="120" fill="var(--text-secondary, currentColor)" font-family="var(--font-heading)" font-size="8" font-style="italic">&theta;</text>
+              </svg>
             </div>
-
+            <div class="paper-diagram-caption">
+              Fig I-1. Geometry of surface-to-orbit solar reflecting vectors.
+            </div>
+          </div>
         </div>
-
+      </div>
     </section>
 
-
-
-    <section id="abcd">
-
-        <div class="container">
-
-            <div class="row">
-
-                <div class="col-lg-12 text-center">
-
-                    <h2 class="section-heading">In My Personal Life, or in Your Service</h2>
-
-                    <hr class="primary">
-
-                </div>
-
+    <!-- SECTION 2: HISTORY OF HELIOGRAPHY (Green Blackboard) -->
+    <section class="section section-chalkboard" id="history">
+      <div class="container">
+        <div class="chalkboard-grid reveal">
+          <!-- Column 1: Historical Diagram -->
+          <div class="chalk-graphic-container">
+            <div class="chalk-photo-frame">
+              <img src="img/mance_heliograph_historic.jpg" alt="Historic photo of Mance MKII Heliograph in use" class="chalk-photo">
+              <div class="chalk-photo-caption">Fig II-1. Signalling by heliograph, H.M.S. Goliath, Yokohama Harbor, Japan circa 1902.</div>
             </div>
+          </div>
 
+          <!-- Column 2: Historical context -->
+          <div class="chalk-notes-container">
+            <h2 class="chalk-header" style="font-size: 2.25rem; margin-bottom: 1.5rem;">Heliography through Time</h2>
+            <p class="chalk-text" style="font-size: 1.15rem; line-height: 1.8;">
+              Heliography—signaling by flashing sunlight reflected from a mirror—has rich historical roots. Developed formally by Sir Henry Christopher Mance in 1869, the heliograph was widely adopted by military campaigns in the late 19th and early 20th centuries. Operating on Morse code, these systems allowed soldiers to communicate across vast desert vistas and mountain ranges, with flashing points visible up to almost 200 miles away.
+            </p>
+            <p class="chalk-text" style="font-size: 1.15rem; line-height: 1.8; margin-top: 1.5rem;">
+              Our project leaps from these terrestrial signaling networks into orbital altitudes. Rather than communicating across mountain ridges, we project precise solar flashes upwards into the path of Low Earth Orbit ("LEO") and Middle Earth Orbit ("MEO") satellites, adapting this 19th-century solar technology for the era of modern satellite communication.
+            </p>
+          </div>
         </div>
-
-        <div class="container">
-
-            <div class="row">
-
-                <div class="col-lg-3 col-md-6 text-center">
-
-                    <div class="service-box">
-
-                        <i class="fa fa-4x fa-map-signs text-primary sr-icons"></i>
-
-                        <h3>Adaptable</h3>
-
-                        <p class="text-muted">I've worked on processes from documentation automation to capital allocation, from data modeling to machine learning.</p>
-
-                    </div>
-
-                </div>
-
-                <div class="col-lg-3 col-md-6 text-center">
-
-                    <div class="service-box">
-
-                        <i class="fa fa-4x fa-map text-primary sr-icons"></i>
-
-                        <h3>Broad-Minded</h3>
-
-                        <p class="text-muted">I've worked with colleagues and collaborators throughout the world and across specializations, benefiting from diverse perspectives.</p>
-
-                    </div>
-
-                </div>
-
-                <div class="col-lg-3 col-md-6 text-center">
-
-                    <div class="service-box">
-
-                        <i class="fa fa-4x fa-puzzle-piece text-primary sr-icons"></i>
-
-                        <h3>Curious</h3>
-
-                        <p class="text-muted">Recursively, every subject I learn reveals new ideas I don't yet understand, becoming new subjects to learn, revealing new ideas...</p>
-
-                    </div>
-
-                </div>
-
-                <div class="col-lg-3 col-md-6 text-center">
-
-                    <div class="service-box">
-
-                        <i class="fa fa-4x fa-heart text-primary sr-icons"></i>
-
-                        <h3>Dedicated</h3>
-
-                        <p class="text-muted">I have worked on data processing for a decade and a half, from sourcing to ETL, from cleaning to analysis to application.</p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-       </div>
-
-   </section>
-
-
-   <section class="no-padding" id="personal">
-
-        <div class="container-fluid">
-
-            <div class="row no-gutter popup-gallery">
-
-
-
-                <div class="col-lg-6 col-sm-6">
-
-                    <a href="img/portfolio/fullsize/2.jpg" class="portfolio-box" id="photo_celestial">
-
-                        <img src="img/portfolio/thumbnails/2.jpg" class="img-responsive" alt="">
-
-                        <div class="portfolio-box-caption">
-
-                            <div class="portfolio-box-caption-content">
-
-                                <div class="project-category text-faded">
-
-                                    Celestial Navigation
-
-                                </div>
-
-                                <div class="project-name">
-
-                                    Navigating the Stars
-
-                                </div>
-
-                            </div>
-
-                        </div>
-
-                    </a>
-
-                </div>
-
-                <div class="col-lg-6 col-sm-6">
-
-                    <a href="img/portfolio/fullsize/1.jpg" class="portfolio-box" id="photo_flight">
-
-                        <img src="img/portfolio/thumbnails/1.jpg" class="img-responsive" alt="">
-
-                        <div class="portfolio-box-caption">
-
-                            <div class="portfolio-box-caption-content">
-
-                                <div class="project-category text-faded">
-
-                                    Flight
-
-                                </div>
-
-                                <div class="project-name">
-
-                                    Navigating the Sky
-
-                                </div>
-
-                            </div>
-
-                        </div>
-
-                    </a>
-
-                </div>
-
-                <div class="col-lg-6 col-sm-6">
-
-                    <a href="img/portfolio/fullsize/3.jpg" class="portfolio-box" id="photo_sailing">
-
-                        <img src="img/portfolio/thumbnails/3.jpg" class="img-responsive" alt="">
-
-                        <div class="portfolio-box-caption">
-
-                            <div class="portfolio-box-caption-content">
-
-                                <div class="project-category text-faded">
-
-                                    Sailing
-
-                                </div>
-
-                                <div class="project-name">
-
-                                    Navigating the Water
-
-                                </div>
-
-                            </div>
-
-                        </div>
-
-                    </a>
-
-                </div>
-
-                <div class="col-lg-6 col-sm-6">
-
-                    <a href="img/portfolio/fullsize/6.jpg" class="portfolio-box" id="photo_family">
-
-                        <img src="img/portfolio/thumbnails/6.jpg" class="img-responsive" alt="">
-
-                        <div class="portfolio-box-caption">
-
-                            <div class="portfolio-box-caption-content">
-
-                                <div class="project-category text-faded">
-
-                                    Family
-
-                                </div>
-
-                                <div class="project-name">
-
-                                    My life at Home
-
-                                </div>
-
-                            </div>
-
-                        </div>
-
-                    </a>
-
-                </div>
-
-            </div>
-
-        </div>
-
+      </div>
     </section>
 
-
-
-    <section id="contact">
-
-        <div class="container">
-
-            <div class="row">
-
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">Let's Get In Touch</h2>
-                    <hr class="primary">
-                    <p>Have a challenge I can help you with?<br>Let's speak and find out how I can add to your enterprise.</p>
-                </div>
-
+    <!-- SECTION 3: PHYSICS & METRICS (Midnight Starfield Canvas Background) -->
+    <section class="section section-starfield" id="physics">
+      <!-- Live orbital intercept simulation canvas background -->
+      <canvas id="starfield-canvas"></canvas>
+      
+      <div class="container" style="position: relative; z-index: 2;">
+        <div class="starfield-grid reveal">
+          <div class="starfield-text-box">
+            <h2 class="section-title" style="text-align: left;">Orbital Intercept Physics</h2>
+            <p class="section-subtitle" style="text-align: left; margin: 0 0 2rem 0; font-size: 1.15rem;">
+              Tracking celestial angles and satellite velocities.
+            </p>
+            
+            <div class="starfield-card" style="margin-bottom: 2rem;">
+              <h3>Thousandths-of-a-Second Tracking</h3>
+              <p style="font-size: 1rem; line-height: 1.7; opacity: 0.85;">
+                Satellites in Low Earth Orbit (LEO) travel at speeds exceeding 7.5 kilometers per second. To hit a satellite's optical receiver with a reflected beam of sunlight, we must compute orbital intercepts with sub-millisecond precision. Even a deviation of 0.001 seconds corresponds to a positional error of 7.5 meters—meaning the reflected beam will completely miss the target.
+              </p>
             </div>
             
-        </div>
-        
-        <div class="container">
-
-            <div class="row">
-
-                <!-- <div class="col-sm text-center"> -->
-                <div class="col-lg-6 col-sm-6 text-center">
-                    <i class="fa fa-phone fa-3x sr-contact"></i>
-                    <p><a class="contact_info" id="contact_phone">+1 303.817.2947</a></p>
-                </div>
-
-                <!-- <div class="col-sm text-center"> -->
-                <div class="col-lg-6 col-sm-6 text-center">
-                    <i class="fa fa-envelope-o fa-3x sr-contact"></i>
-                    <p><a href="mailto:izawaryu@gmail.com" class="contact_info" id="contact_email">izawaryu@gmail.com</a></p>
-                </div>
-
-                <!-- <div class="col-sm text-center"> -->
-                <div class="col-lg-6 col-sm-6 text-center">
-                    <i class="fa fa-linkedin-square fa-3x sr-contact"></i>
-                    <p><a href="https://www.linkedin.com/in/izawaryu" class="contact_info" id="contact_linkedin">linkedin.com/in/izawaryu</a></p>
-                </div>
-
-                <!-- <div class="col-sm text-center"> -->
-                <div class="col-lg-6 col-sm-6 text-center">
-                    <i class="fa fa-microphone fa-3x sr-contact"></i>
-                    <p><a href="https://gsara.club" class="contact_info" id="contact_radio">K2RYU</a></p>
-                </div>
-
+            <div class="starfield-card">
+              <h3>Atmospheric Refraction Correction</h3>
+              <p style="font-size: 1rem; line-height: 1.7; opacity: 0.85;">
+                We calculate real-time refraction parameters based on local meteorological readings. By compensating for atmospheric density variations, we steer our high-precision mirror mounts to correct coordinate errors.
+              </p>
             </div>
+          </div>
+          
+          <div class="starfield-diagram-container">
+            <div class="paper-diagram-box" style="background: rgba(20, 25, 35, 0.8); backdrop-filter: var(--glass-backdrop); --plate-text: 'PLATE II'; --plate-top: 1rem; --plate-left: 1rem; --plate-right: auto; --plate-bg: rgba(20, 25, 35, 0.95); --border-color: rgba(255, 255, 255, 0.15);">
+              <!-- Spherical Trig Orbit Intercept Diagram -->
+              <svg viewBox="0 0 500 400" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" style="width: 100%; height: auto;">
+                <defs>
+                  <!-- Soft glows -->
+                  <filter id="glow-gold" x="-50%" y="-50%" width="200%" height="200%">
+                    <feGaussianBlur in="SourceGraphic" stdDeviation="6" result="blur" />
+                    <feMerge>
+                      <feMergeNode in="blur" />
+                      <feMergeNode in="SourceGraphic" />
+                    </feMerge>
+                  </filter>
+                  <filter id="glow-cyan" x="-50%" y="-50%" width="200%" height="200%">
+                    <feGaussianBlur in="SourceGraphic" stdDeviation="4" result="blur" />
+                    <feMerge>
+                      <feMergeNode in="blur" />
+                      <feMergeNode in="SourceGraphic" />
+                    </feMerge>
+                  </filter>
+                </defs>
 
+                <!-- Title / Heading -->
+                <text x="250" y="30" fill="var(--text-primary)" font-family="var(--font-heading)" font-size="14" font-weight="600" text-anchor="middle" letter-spacing="0.5">Celestial Dome Coordinate Projection</text>
+                <text x="250" y="48" fill="var(--text-muted, hsl(220, 15%, 65%))" font-family="var(--font-mono)" font-size="9" text-anchor="middle">Horizontal &amp; Angular Target Separation Grid</text>
+
+                <!-- Dome Surface Grid: Almucantars (Horizontal Latitude Circles) -->
+                <!-- Almucantar at h=30 deg -->
+                <path d="M 120 236 A 138.6 37.5 0 0 1 380 236" stroke="rgba(255, 255, 255, 0.05)" stroke-width="0.8" stroke-dasharray="4,4" />
+                <path d="M 380 236 A 138.6 37.5 0 0 1 120 236" stroke="rgba(255, 255, 255, 0.08)" stroke-width="0.8" />
+
+                <!-- Almucantar at h=60 deg -->
+                <path d="M 178 180 A 80 21.6 0 0 1 322 180" stroke="rgba(255, 255, 255, 0.05)" stroke-width="0.8" stroke-dasharray="4,4" />
+                <path d="M 322 180 A 80 21.6 0 0 1 178 180" stroke="rgba(255, 255, 255, 0.08)" stroke-width="0.8" />
+
+                <!-- Dome Meridians (Vertical Grid Profiles) -->
+                <path d="M 90 260 A 160 160 0 0 1 410 260" stroke="rgba(255, 255, 255, 0.2)" stroke-width="1.2" />
+
+                <!-- Back Horizon (Dashed) -->
+                <path d="M 90 260 A 160 50 0 0 1 410 260" stroke="rgba(255, 255, 255, 0.15)" stroke-width="1" stroke-dasharray="4,4" />
+
+                <!-- Ground Plane (Local Horizon) Fill -->
+                <ellipse cx="250" cy="260" rx="160" ry="50" fill="rgba(255, 255, 255, 0.02)" stroke="none" />
+
+                <!-- Zenith Axis (Vertical Line G -> Z) -->
+                <line x1="250" y1="260" x2="250" y2="100" stroke="rgba(255, 255, 255, 0.15)" stroke-width="1" stroke-dasharray="3,3" />
+
+                <!-- Radial Vectors on Ground Plane (to H_sun and H_sat on the rim) -->
+                <!-- G -> H_sun (11 o'clock) -->
+                <line x1="250" y1="260" x2="170" y2="217" stroke="var(--accent-gold)" stroke-width="1.2" stroke-dasharray="2,2" />
+                <!-- G -> H_sat (1 o'clock) -->
+                <line x1="250" y1="260" x2="330" y2="217" stroke="var(--accent-cyan)" stroke-width="1.2" stroke-dasharray="2,2" />
+
+                <!-- Ground Plane Azimuth Arc (ΔA) -->
+                <path d="M 236 252 A 30 15 0 0 1 264 252" stroke="rgba(255, 255, 255, 0.4)" stroke-width="1" fill="none" stroke-dasharray="2,1" />
+
+                <!-- Vertical Coordinate Slice 1 (Sun sector at 11 o'clock) -->
+                <path d="M 250 260 L 170 217 Q 170 152 195 120 Z" fill="rgba(255, 215, 0, 0.04)" stroke="none" />
+                <line x1="250" y1="260" x2="195" y2="120" stroke="var(--accent-gold)" stroke-width="1.5" />
+                
+                <!-- Sun Altitude Arc: Horizon rim (H_sun) to Sun (S) only (spherical curved - balanced) -->
+                <path d="M 170 217 Q 170 152 195 120" stroke="var(--accent-gold)" stroke-width="2.2" />
+
+                <!-- Vertical Coordinate Slice 2 (Satellite sector at 1 o'clock) -->
+                <path d="M 250 260 L 330 217 Q 330 170 305 143 Z" fill="rgba(0, 240, 240, 0.03)" stroke="none" />
+                <line x1="250" y1="260" x2="305" y2="143" stroke="var(--accent-cyan)" stroke-width="1.5" />
+                
+                <!-- Satellite Altitude Arc: Horizon rim (H_sat) to Satellite (Sat) only (spherical curved - balanced) -->
+                <path d="M 330 217 Q 330 170 305 143" stroke="var(--accent-cyan)" stroke-width="2.2" />
+
+                <!-- Great Circle Segment / Angular separation γ directly connecting Sun & Satellite -->
+                <path d="M 195 120 Q 250 112 305 143" stroke="#c080ff" stroke-width="3" />
+
+                <!-- Front Horizon (Solid Rim) -->
+                <path d="M 410 260 A 160 50 0 0 1 90 260" stroke="rgba(255, 255, 255, 0.4)" stroke-width="1.2" />
+
+                <!-- Ground Points -->
+                <!-- G (Heliostat center) -->
+                <circle cx="250" cy="260" r="3.5" fill="#ffffff" stroke="#111" stroke-width="1" />
+                <text x="250" y="278" fill="var(--text-primary)" font-family="var(--font-mono)" font-size="9" text-anchor="middle">G (Heliostat)</text>
+
+                <!-- Horizon projections on the rim -->
+                <!-- H_sun (11 o'clock) -->
+                <circle cx="170" cy="217" r="2.5" fill="var(--accent-gold)" />
+                <text x="160" y="217" fill="var(--accent-gold)" font-family="var(--font-mono)" font-size="8.5" text-anchor="end">H_sun (11:00)</text>
+                <!-- H_sat (1 o'clock) -->
+                <circle cx="330" cy="217" r="2.5" fill="var(--accent-cyan)" />
+                <text x="340" y="217" fill="var(--accent-cyan)" font-family="var(--font-mono)" font-size="8.5" text-anchor="start">H_sat (1:00)</text>
+
+                <!-- Sky Points (Sun & Satellite) exactly on their respective arcs -->
+                <!-- Sun (S) -->
+                <g filter="url(#glow-gold)">
+                  <circle cx="195" cy="120" r="8" fill="rgba(255, 215, 0, 0.2)" stroke="var(--accent-gold)" stroke-width="1.5" />
+                  <line x1="195" y1="108" x2="195" y2="111" stroke="var(--accent-gold)" stroke-width="0.8" />
+                  <line x1="195" y1="129" x2="195" y2="132" stroke="var(--accent-gold)" stroke-width="0.8" />
+                  <line x1="183" y1="120" x2="186" y2="120" stroke="var(--accent-gold)" stroke-width="0.8" />
+                  <line x1="204" y1="120" x2="207" y2="120" stroke="var(--accent-gold)" stroke-width="0.8" />
+                </g>
+                <text x="195" y="104" fill="var(--accent-gold)" font-family="var(--font-heading)" font-size="9.5" font-weight="bold" text-anchor="middle">Sun (S)</text>
+
+                <!-- Satellite (Sat) -->
+                <g transform="translate(305, 143)" filter="url(#glow-cyan)">
+                  <rect x="-2.5" y="-4" width="5" height="8" rx="0.8" fill="rgba(0, 240, 240, 0.2)" stroke="var(--accent-cyan)" stroke-width="1" />
+                  <line x1="-10" y1="0" x2="10" y2="0" stroke="var(--accent-cyan)" stroke-width="1" />
+                  <rect x="-9" y="-2" width="5" height="4" rx="0.5" fill="rgba(0, 240, 240, 0.1)" stroke="var(--accent-cyan)" stroke-width="0.8" />
+                  <rect x="6" y="-2" width="5" height="4" rx="0.5" fill="rgba(0, 240, 240, 0.1)" stroke="var(--accent-cyan)" stroke-width="0.8" />
+                </g>
+                <text x="305" y="132" fill="var(--accent-cyan)" font-family="var(--font-heading)" font-size="9.5" font-weight="bold" text-anchor="middle">Sat</text>
+
+                <!-- Zenith Reference (Z) -->
+                <circle cx="250" cy="100" r="2.5" fill="#ffffff" />
+                <text x="250" y="88" fill="var(--text-primary)" font-family="var(--font-mono)" font-size="9.5" font-weight="bold" text-anchor="middle">Zenith (Z)</text>
+
+                <!-- Angle & Distance Labels -->
+                <!-- Elevation labels (along vertical arcs) -->
+                <text x="167" y="173" fill="var(--accent-gold)" font-family="var(--font-mono)" font-size="8.5" font-style="italic" text-anchor="middle">&theta;_s</text>
+                <text x="333" y="185" fill="var(--accent-cyan)" font-family="var(--font-mono)" font-size="8.5" font-style="italic" text-anchor="middle">&theta;_o</text>
+
+                <!-- Angular Separation (gamma) along S-Sat arc -->
+                <text x="250" y="125" fill="#c080ff" font-family="var(--font-mono)" font-size="9" font-weight="bold" text-anchor="middle">&gamma;</text>
+
+                <!-- Azimuth separation labels -->
+                <!-- Delta A at ground G -->
+                <text x="250" y="244" fill="var(--text-primary)" font-family="var(--font-mono)" font-size="8.5" opacity="0.8" text-anchor="middle">&Delta;A</text>
+
+                <!-- Explanatory math key at bottom -->
+                <rect x="35" y="335" width="430" height="42" rx="4" fill="rgba(255, 255, 255, 0.01)" stroke="rgba(255, 255, 255, 0.05)" stroke-width="0.8" />
+                <text x="250" y="350" fill="var(--text-muted, hsl(220, 15%, 75%))" font-family="var(--font-heading)" font-size="8.5" text-anchor="middle">Spherical Law of Cosines (for Angular Target Separation &gamma;):</text>
+                <text x="250" y="367" fill="#c080ff" font-family="var(--font-mono)" font-size="9.5" font-weight="bold" text-anchor="middle">cos(&gamma;) = sin(&theta;_s)sin(&theta;_o) + cos(&theta;_s)cos(&theta;_o)cos(&Delta;A)</text>
+              </svg>
+            </div>
+            <div class="paper-diagram-caption" style="color: hsl(220, 15%, 75%);">
+              Fig III-1. Spherical trigonometry coordinates for tracking orbits.
+            </div>
+            
+            <!-- Technical field photo of precision tracking mirror array at observatory -->
+            <div class="paper-diagram-box" style="margin-top: 2.5rem; background: rgba(20, 25, 35, 0.8); backdrop-filter: var(--glass-backdrop); border-color: var(--border-color); padding: 1rem; --plate-text: 'PLATE III'; --plate-top: auto; --plate-bottom: 1.5rem; --plate-right: 1.5rem; --plate-bg: rgba(20, 25, 35, 0.95); --border-color: rgba(255, 255, 255, 0.15);">
+              <img src="img/physics_field_test.jpg" alt="Field test of mirror heliostat array at observatory" style="width: 100%; height: auto; display: block; border: 1px solid rgba(255, 255, 255, 0.15);">
+            </div>
+            <div class="paper-diagram-caption" style="color: hsl(220, 15%, 75%);">
+              Fig III-2. Field testing of the high-precision heliostat tracking mount at a high-altitude observatory.
+            </div>
+          </div>
         </div>
-
+      </div>
     </section>
 
-
-
-    <footer>
-
-        <div class="footer-content">
-
-            <div class="footer-content-inner">
-
-                <a href="#page-top" class="btn btn-primary btn-xl page-scroll" id="end_top">To The Top</a>
-
-            </div>
-
+    <!-- SECTION 4: THE TEAM (White Journal paper Ledger) -->
+    <section class="section section-paper" id="team">
+      <div class="container">
+        <div class="text-center">
+          <h2 class="section-title reveal">The Research Team</h2>
+          <p class="section-subtitle reveal">
+            Collaborating scientists and optical engineers pioneering the orbital heliography program.
+          </p>
         </div>
 
-    </footer>
+        <div class="reveal" style="overflow-x: auto;">
+          <!-- Sci-fi Foundation placeholder names team ledger table -->
+          <table class="team-table">
+            <thead>
+              <tr>
+                <th style="width: 30%;">Researcher Name</th>
+                <th style="width: 70%;">Role &amp; Focus</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Ryu Izawa</strong></td>
+                <td>
+                  <div class="team-role">Principal Orbital Dynamicist, Heliographer</div>
+                  <div class="team-specialty">Trajectory calculations &amp; precision targeting arrays.</div>
+                </td>
+              </tr>
+              <tr>
+                <td><strong>Anthony Goddard</strong></td>
+                <td>
+                  <div class="team-role">Principal Cartographer, Heliographer</div>
+                  <div class="team-specialty">Topographic mapping &amp; solar vector alignment.</div>
+                </td>
+              </tr>
+              <tr>
+                <td><strong>Aamuro Kanda</strong></td>
+                <td>
+                  <div class="team-role">Documentarian, Director</div>
+                  <div class="team-specialty">Expedition cinematography &amp; narrative telemetry records.</div>
+                </td>
+              </tr>
+              <tr>
+                <td><strong>Reese Glick</strong></td>
+                <td>
+                  <div class="team-role">Documentarian, Producer</div>
+                  <div class="team-specialty">Remote site logistics &amp; media archive coordination.</div>
+                </td>
+              </tr>
+              <tr>
+                <td><strong>Alex Buysse</strong></td>
+                <td>
+                  <div class="team-role">Director of Photography, Expeditionary</div>
+                  <div class="team-specialty">High-contrast optical capture &amp; astronomical lighting.</div>
+                </td>
+              </tr>
+              <tr>
+                <td><strong>Thomas Sullivan</strong></td>
+                <td>
+                  <div class="team-role">Sound Unit Director, Expeditionary</div>
+                  <div class="team-specialty">Acoustic telemetry &amp; spatial field recordings.</div>
+                </td>
+              </tr>
+              <tr>
+                <td><strong>Ry Swaty</strong></td>
+                <td>
+                  <div class="team-role">Camera Operator, Sound, Heliographer</div>
+                  <div class="team-specialty">Field mirror configuration &amp; camera operations.</div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
 
+    <!-- SECTION 5: CALENDAR OF ATTEMPTS (Green Chalkboard Calendar) -->
+    <section class="section section-chalkboard" id="calendar">
+      <div class="container">
+        <div class="text-center">
+          <h2 class="section-title reveal">Signal Attempts Log</h2>
+          <p class="section-subtitle reveal">
+            A chronological timeline of mirror targeting missions and orbital reflection sync runs.
+            <br>
+            <a href="https://docs.google.com/spreadsheets/d/1iuroE9vS6bvfAUALEXsHus-KP6qL3TNJIXiw_4ShMdM" target="_blank" rel="noopener" class="chalk-link" style="margin-top: 0.5rem; display: inline-block; font-size: 0.9rem; font-family: var(--font-mono); color: var(--accent-cyan); text-decoration: underline; text-shadow: 0 0 2px rgba(0, 240, 240, 0.3);">
+              View Source Spreadsheet
+            </a>
+          </p>
+        </div>
 
+        <div class="calendar-grid reveal">
+          <div style="grid-column: 1 / -1; text-align: center; font-family: var(--font-mono); color: var(--text-muted); font-style: italic; padding: 3rem 0;">
+            Connecting to orbital telemetry database...
+          </div>
+        </div>
 
+        <div class="text-center reveal" style="margin-top: 3.5rem;">
+          <button id="open-log-form-btn" class="chalk-btn" style="background: transparent; border: 1px dashed var(--accent-cyan); color: var(--accent-cyan); padding: 0.75rem 2rem; font-family: var(--font-heading); font-style: italic; font-size: 1.1rem; cursor: pointer; transition: var(--transition-smooth); text-shadow: 0 0 2px rgba(0, 240, 240, 0.3);">
+            + Write New Mission Log Entry
+          </button>
+        </div>
 
-    <!-- jQuery -->
+        <!-- Slide-down Chalkboard Form -->
+        <div id="log-form-container" class="log-form-container reveal" style="display: none; max-width: 600px; margin: 2.5rem auto 0 auto; border: 1px dashed var(--border-color); padding: 2rem; background: rgba(255, 255, 255, 0.02);">
+          <h3 class="chalk-header" style="margin-bottom: 1.5rem; text-align: center;">Record New Reflection Mission</h3>
+          <form id="new-log-form">
+            <div class="chalk-form-group">
+              <label for="log-date">Mission Date &amp; ID</label>
+              <input type="text" id="log-date" placeholder="e.g. 04 June 2026 // LEO-SYNC-03" required>
+            </div>
+            <div class="chalk-form-group">
+              <label for="log-title">Mission Target / Title</label>
+              <input type="text" id="log-title" placeholder="e.g. Helios-Sync Beta" required>
+            </div>
+            <div class="chalk-form-group">
+              <label for="log-status">Mission Status</label>
+              <select id="log-status">
+                <option value="scheduled">SCHEDULED</option>
+                <option value="completed">RECORDED (COMPLETED)</option>
+              </select>
+            </div>
+            <div class="chalk-form-group">
+              <label for="log-desc">Mission Description &amp; Metrics</label>
+              <textarea id="log-desc" rows="4" placeholder="Detail tracking duration, motor calibration deltas, and reflection results..." required></textarea>
+            </div>
+            <div style="display: flex; gap: 1rem; justify-content: flex-end; margin-top: 1.5rem;">
+              <button type="button" id="close-log-form-btn" class="chalk-btn-secondary" style="background: transparent; border: 1px dashed var(--border-color); color: hsl(45, 10%, 80%); padding: 0.5rem 1.5rem; cursor: pointer; font-family: var(--font-body); font-style: italic;">Cancel</button>
+              <button type="submit" class="chalk-btn" style="background: transparent; border: 1px dashed var(--accent-cyan); color: var(--accent-cyan); padding: 0.5rem 1.5rem; cursor: pointer; font-family: var(--font-heading); font-style: italic; font-weight: bold; text-shadow: 0 0 2px rgba(0, 240, 240, 0.3);">Commit to Log</button>
+            </div>
+          </form>
+          <div id="form-feedback" style="margin-top: 1rem; text-align: center; font-family: var(--font-mono); font-size: 0.85rem;"></div>
+        </div>
 
-    <script src="vendor/jquery/jquery.min.js"></script>
+      </div>
+    </section>
 
+    <!-- SECTION 6: CONTACT (White Journal paper Ledger) -->
+    <section class="section section-paper" id="contact" style="border-top: 1px solid rgba(0, 0, 0, 0.08);">
+      <div class="container">
+        <div class="text-center">
+          <h2 class="section-title reveal">Contact Us</h2>
+          <p class="section-subtitle reveal">
+            Interested in our orbital tracking telemetry, precision heliostat arrays, or solar signaling research? Reach out to collaborate on our upcoming surface-to-orbit transmission windows.
+          </p>
+        </div>
 
-    <!-- Bootstrap Core JavaScript -->
+        <div class="contact-grid reveal">
+          <!-- Phone Card -->
+          <div class="contact-card">
+            <div class="contact-icon-wrap">
+              <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+              </svg>
+            </div>
+            <h4>Voice Comm</h4>
+            <p><a href="tel:+13038172947" class="contact-link">+1 303.817.2947</a></p>
+          </div>
 
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+          <!-- Email Card -->
+          <div class="contact-card">
+            <div class="contact-icon-wrap">
+              <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+            </div>
+            <h4>Email Sync</h4>
+            <p><a href="mailto:izawaryu@gmail.com" class="contact-link">izawaryu@gmail.com</a></p>
+          </div>
 
+          <!-- LinkedIn Card -->
+          <div class="contact-card">
+            <div class="contact-icon-wrap">
+              <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+            </div>
+            <h4>Professional Registry</h4>
+            <p><a href="https://www.linkedin.com/in/izawaryu" target="_blank" rel="noopener" class="contact-link">linkedin.com/in/izawaryu</a></p>
+          </div>
 
-    <!-- Plugin JavaScript -->
+          <!-- Amateur Radio Card -->
+          <div class="contact-card">
+            <div class="contact-icon-wrap">
+              <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3z"></path>
+                <path d="M19 10v1a7 7 0 0 1-14 0v-1"></path>
+                <line x1="12" y1="19" x2="12" y2="22"></line>
+              </svg>
+            </div>
+            <h4>Call Sign // RF</h4>
+            <p><a href="https://gsara.club" target="_blank" rel="noopener" class="contact-link">K2RYU</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+  </main>
 
-    <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <button class="scroll-top-btn" onclick="window.scrollTo({top: 0, behavior: 'smooth'})" aria-label="Scroll to top" id="end_top">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="18 15 12 9 6 15"></polyline>
+        </svg>
+      </button>
+      <div class="footer-nav">
+        <a href="#introduction">Introduction</a>
+        <a href="#history">History</a>
+        <a href="#physics">Physics</a>
+        <a href="#team">The Team</a>
+        <a href="#calendar">Calendar</a>
+        <a href="predictor.html" style="color: var(--accent-cyan); font-weight: 600;">Pass Predictor</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <p class="footer-credits">
+        &copy; 2026 The Orbital Heliography Project. Designed for advanced coordinate projection &amp; optical messaging.
+      </p>
+    </div>
+  </footer>
 
-    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
-
-
-    <!-- Theme JavaScript -->
-
-    <script src="js/creative.min.js">
-
-</script>
-
-
+  <!-- Scripts -->
+  <script src="js/main.js?v=1.0.19"></script>
 </body>
-
-
 </html>
